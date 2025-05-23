@@ -1,6 +1,14 @@
 /* Hero.module.css */
-.hero {
-  background-color: #f0c14b;
+.heroContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  text-align: center;
+}
+
+.carousel .slide img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
 }

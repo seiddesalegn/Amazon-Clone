@@ -2,7 +2,9 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // required CSS
 import { Carousel } from "react-responsive-carousel";
+import styles from "./Hero.module.css";
 
+//the big pictures we see sliding at the top of Amazon’s homepage.
 const Hero = () => {
   return (
     <div>

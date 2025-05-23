@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/Hero/Hero";
+import Hero from "../Components/Hero/Hero";
 import ProductRow from "../components/ProductRow/ProductRow";
 import styles from "./Home.module.css";
 
