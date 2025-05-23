@@ -1,0 +1,310 @@
+/* Top Header */
+.topHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #131921;
+  color: white;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+/* Left side */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 100px;
+  object-fit: contain;
+}
+
+.delivery {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.locationIcon {
+  font-size: 18px;
+  margin-right: 6px;
+  color: white;
+}
+
+.locationText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.topText {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.bottomText {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Search Bar */
+.searchBar {
+  display: flex;
+  flex: 1;
+  margin: 10px 0;
+  max-width: 800px;
+  width: 100%;
+}
+
+.select {
+  background-color: #f3f3f3;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.searchInput.focused,
+.searchInput:focus {
+  border: 2px solid #febd69;
+  border-radius: 4px;
+  outline: none;
+}
+
+.searchButton {
+  background-color: #febd69;
+  padding: 0 15px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  cursor: pointer;
+}
+
+/* Right side */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.flag {
+  width: 20px;
+  height: 15px;
+}
+
+.account,
+.orders {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.smallText {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.boldText {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cartCount {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 2px 6px;
+}
+
+/* Hover effect shared across header buttons and nav links */
+.hoverBox,
+.navLinks a {
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.hoverBox:hover,
+.navLinks a:hover {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Bottom Header */
+.bottomHeader {
+  display: flex;
+  align-items: center;
+  background-color: #232f3e;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+}
+
+.bottomLeft {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.bottomLeft:hover {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menuIcon {
+  margin-right: 5px;
+}
+
+.allText {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.navLinks {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 8px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  border: 2px solid transparent;
+  display: inline-flex;
+  align-items: center;
+}
+
+.navLinks a:hover {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Rufus and Join Prime with white background and rounded style */
+.rufus,
+.joinPrime {
+  background-color: white !important;
+  color: black !important;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rufus:hover,
+.joinPrime:hover {
+  background-color: #f3f3f3;
+  transform: translateY(-1px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .bottomHeader {
+    overflow-x: auto;
+  }
+
+  .navLinks a,
+  .bottomLeft,
+  .rufus,
+  .joinPrime {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 80px;
+  }
+
+  .searchInput,
+  .select {
+    font-size: 12px;
+  }
+
+  .boldText,
+  .bottomText {
+    font-size: 12px;
+  }
+
+  .smallText,
+  .topText {
+    font-size: 10px;
+  }
+
+  .cartCount {
+    font-size: 10px;
+    padding: 1px 5px;
+  }
+
+  .highlightedLink {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+
+  .navLinks a,
+  .bottomLeft,
+  .rufus,
+  .joinPrime {
+    font-size: 11px;
+    padding: 3px 5px;
+  }
+}
