@@ -1,26 +1,21 @@
 .heroContainer {
   width: 100vw;
-  height: 600px;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  overflow-x: hidden; /* add this */
+  max-width: 100%;
+  position: relative; /* ✅ Needed */
+  overflow-x: hidden;
+  z-index: 1;
 }
 
 .carousel img {
   width: 100vw !important;
-  height: 600px; /* match container height or use auto */
-  object-fit: cover; /* crops if needed */
+  height: 60vh; /* Responsive height for desktop */
+  max-height: 600px;
+  object-fit: cover;
   display: block;
 }
 
-.categoriesOverlay {
-  position: absolute;
-  bottom: 0; /* stick categories to bottom of hero */
-  width: 100%;
-  padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.8); /* or transparent if you want */
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+@media (max-width: 768px) {
+  .carousel img {
+    height: 40vh; /* Smaller height on mobile */
+  }
 }

@@ -2,7 +2,6 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import styles from "./Hero.module.css";
-import ProductCategories from "../ProductCategories/ProductCategories";
 
 const Hero = () => {
   return (
@@ -25,10 +24,6 @@ const Hero = () => {
           <img src="/images/banner3.jpg" alt="Banner 3" />
         </div>
       </Carousel>
-
-      <div className={styles.categoriesOverlay}>
-        <ProductCategories />
-      </div>
     </div>
   );
 };
