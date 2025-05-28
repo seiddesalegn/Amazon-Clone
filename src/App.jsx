@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import Home from "./Pages/Home";
 import ProductDetails from "./Pages/ProductDetails/ProductDetail";
 import CategoryPage from "./Pages/CategoryPage"; // import new page
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/category/:categoryName" element={<CategoryPage />} />{" "}
         {/* new route */}
       </Routes>
+      <Footer />
     </Router>
   );
 }
