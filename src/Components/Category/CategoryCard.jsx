@@ -1,29 +1,10 @@
-import React from "react";
-import classes from "./category.module.css";
-
-function CategoryCard({ data }) {
-  return (
-    <div className={classes.category}>
-      <a href="#">
-        <span>
-          <h2>{data.title}</h2>
-        </span>
-        <img src={data.imgLink} alt={data.title} />
-        <p>Shop now</p>
-      </a>
-    </div>
-  );
-}
-
-export default CategoryCard;
-
 // import React from "react";
 // import classes from "./category.module.css";
 
 // function CategoryCard({ data }) {
 //   return (
 //     <div className={classes.category}>
-//       <a href="">
+//       <a href="#">
 //         <span>
 //           <h2>{data.title}</h2>
 //         </span>
@@ -35,3 +16,26 @@ export default CategoryCard;
 // }
 
 // export default CategoryCard;
+
+import React from "react";
+import { Link } from "react-router-dom";
+import classes from "./category.module.css";
+
+function CategoryCard({ data }) {
+  return (
+    <div className={classes.category}>
+      <Link
+        to={`/category/${data.title.toLowerCase()}`}
+        className={classes.categoryLink}
+      >
+        <span>
+          <h2>{data.title}</h2>
+        </span>
+        <img src={data.imgLink} alt={data.title} />
+        <p>Shop now</p>
+      </Link>
+    </div>
+  );
+}
+
+export default CategoryCard;

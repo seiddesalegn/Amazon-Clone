@@ -1,7 +1,12 @@
 import React from "react";
 import "./Results.module.css";
+import Layout from "../../Components/Layout/Layout";
+
 function Results() {
-  return <div>Results</div>;
+  return;
+  <Layout>
+    <div>Results</div>;
+  </Layout>;
 }
 
 export default Results;

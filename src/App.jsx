@@ -1,19 +1,21 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
+import Header from "./Components/Header/Header";
 import Home from "./Pages/Home";
-import Category from "./Components/Category/Category";
-import Product from "./Components/Product/Product";
+import ProductDetails from "./Pages/ProductDetails/ProductDetail";
+import CategoryPage from "./Pages/CategoryPage"; // import new page
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <Hero />
-      <Category />
-      <Product />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/category/:categoryName" element={<CategoryPage />} />{" "}
+        {/* new route */}
+      </Routes>
+    </Router>
   );
 }
 

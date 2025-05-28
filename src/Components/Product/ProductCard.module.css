@@ -68,3 +68,7 @@
 .addButton:hover {
   background-color: #ddb347;
 }
+.link {
+  text-decoration: none;
+  color: inherit;
+}
