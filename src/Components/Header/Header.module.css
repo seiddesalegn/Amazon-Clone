@@ -10,7 +10,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 20px; /* original vertical and horizontal padding */
+  box-sizing: border-box;
+  height: auto; /* no fixed height on large screens */
 }
 
 /* Left side */
@@ -22,7 +24,9 @@
 
 .logo {
   width: 100px;
+  height: auto;
   object-fit: contain;
+  max-height: none; /* default no height limit */
 }
 
 .delivery {
@@ -271,37 +275,50 @@
 }
 
 /* Responsive Styles */
+
+/* Medium devices and below */
 @media (max-width: 768px) {
-  .bottomHeader {
-    overflow-x: auto;
+  .topHeader {
+    padding: 5px 15px; /* less vertical and horizontal padding */
+    height: 50px; /* fixed height to reduce vertical size */
   }
 
-  .navLinks a,
-  .bottomLeft,
-  .rufus,
-  .joinPrime {
+  .logo {
+    width: 80px;
+    max-height: 40px;
+  }
+
+  .locationIcon {
+    font-size: 16px;
+  }
+
+  /* Smaller font sizes inside the header */
+  .topHeader span,
+  .topHeader input,
+  .topHeader select {
     font-size: 12px;
-    padding: 4px 6px;
   }
 }
 
+/* Small devices and below */
 @media (max-width: 480px) {
+  .topHeader {
+    padding: 4px 10px;
+    height: 45px;
+  }
+
   .logo {
-    width: 80px;
+    width: 70px;
+    max-height: 35px;
   }
 
-  .searchInput,
-  .select {
-    font-size: 12px;
+  .locationIcon {
+    font-size: 14px;
   }
 
-  .boldText,
-  .bottomText {
-    font-size: 12px;
-  }
-
-  .smallText,
-  .topText {
+  .topHeader span,
+  .topHeader input,
+  .topHeader select {
     font-size: 10px;
   }
 

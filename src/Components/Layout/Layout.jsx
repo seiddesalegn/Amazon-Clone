@@ -1,16 +1,5 @@
-// import React from "react";
-// import Header from "./Header";
+//!i tried to conect this layout to cart and other files but  it gives me hard time so i leave the code and use another method
 
-// function Layout({ children }) {
-//   return (
-//     <div>
-//       <Header />
-//       {children}
-//     </div>
-//   );
-// }
-
-// export default Layout;
 import React from "react";
 import Header from "./Header";
 

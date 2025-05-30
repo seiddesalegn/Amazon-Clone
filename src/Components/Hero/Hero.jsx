@@ -1,3 +1,6 @@
+//i uses my hero banner images which i download from unsplash
+// i didn't use the one we got from the project
+
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
