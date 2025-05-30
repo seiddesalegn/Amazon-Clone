@@ -1,7 +1,7 @@
 .headerWrapper {
   position: sticky;
   z-index: 100;
-  top: 0;
+  top: 0; /*to make header sticky*/
 }
 
 /* Top Header */
@@ -10,9 +10,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* original vertical and horizontal padding */
+  padding: 10px 20px;
   box-sizing: border-box;
-  height: auto; /* no fixed height on large screens */
+  height: auto;
 }
 
 /* Left side */
@@ -152,6 +152,7 @@
   align-items: center;
   cursor: pointer;
   color: white;
+  size: 30px;
 }
 
 .cart svg {
@@ -258,7 +259,6 @@
   background-color: white !important;
   color: black !important;
   padding: 5px 12px;
-  border-radius: 30px;
   font-weight: 500;
   font-size: 13px;
   text-decoration: none;

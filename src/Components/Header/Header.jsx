@@ -6,7 +6,7 @@ import {
   FaSearch,
   FaShoppingCart,
   FaCaretDown,
-} from "react-icons/fa";
+} from "react-icons/fa"; //i used react icons insted of fontawesome
 import { Link } from "react-router-dom";
 import { useShoppingCart } from "../../Pages/Context/ShoppingCartContext.jsx";
 

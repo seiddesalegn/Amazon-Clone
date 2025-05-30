@@ -1,25 +1,3 @@
-// import React from "react";
-// import { useParams, Link } from "react-router-dom";
-
-// function CategoryPage() {
-//   const { categoryName } = useParams();
-
-//   return (
-//     <div style={{ padding: "1rem" }}>
-//       <Link to="/" style={{ textDecoration: "none", color: "#007185" }}>
-//         ← Back to Home
-//       </Link>
-//       <h2 style={{ marginTop: "1rem", textTransform: "capitalize" }}>
-//         {categoryName} Products
-//       </h2>
-//       <p>Here you can display products for the "{categoryName}" category.</p>
-//       {/* You can add product filtering here later */}
-//     </div>
-//   );
-// }
-
-// export default CategoryPage;
-
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
