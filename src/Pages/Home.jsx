@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/Hero/Hero";
+import Hero from "../Components/Hero/Hero";
 import Category from "../components/Category/Category";
 import Product from "../components/Product/Product";
 
