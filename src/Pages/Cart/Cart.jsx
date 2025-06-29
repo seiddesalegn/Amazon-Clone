@@ -1,6 +1,6 @@
 import React from "react";
 import { useShoppingCart } from "../../Pages/Context/ShoppingCartContext.jsx";
-import CurrencyFormat from "../../components/CurrencyFormat/CurrencyFormat.jsx";
+import CurrencyFormat from "../../Components/CurrencyFormat/CurrencyFormat.jsx";
 import styles from "./Cart.module.css";
 import { Link } from "react-router-dom";
 
